@@ -135,7 +135,7 @@ myDictionary = defaultdict(list)
 > Python Counter is a container that will hold the count of each of the elements present in the container. The counter is a sub-class available inside the dictionary class. Specifically used for element frequencies
 > 
 
-*Pretty similar to dictionary, infact I use* **defaultdict(int)** *most of the time* 
+*Pretty similar to dictionary, in fact I use* **defaultdict(int)** *most of the time* 
 
 ```python
 from collections import Counter #(capital 'C')
