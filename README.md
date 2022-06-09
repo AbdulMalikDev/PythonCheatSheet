@@ -282,12 +282,13 @@ text = 'Python is a fun programming language'
 
 # split the text from space
 print(text.split(' '))
+# Output: ['Python', 'is', 'a', 'fun', 'programming', 'language']
 
 # convert string to list
 s="abcd"
 s=list(s)
-
-# Output: ['Python', 'is', 'a', 'fun', 'programming', 'language']
+print(s)
+# Output: ['a', 'b', 'c', 'd']
 
 # ** count Function **
 # The count() method returns the number of occurrences of a substring in the given string.
