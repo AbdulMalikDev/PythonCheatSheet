@@ -117,11 +117,14 @@ dict.copy() # returns copy of the dictionary
 # changes to dict
 dict.pop(KEY) # pops key-value pair with that key
 dict.popitem() # removes most recent pair added
-dict.setDefault(KEY,DEFAULT_VALUE) # returns value of key, if key exists, else default value returned
+dict.setDefault(KEY,DEFAULT_VALUE)
+# returns value of key, if key exists, else default value returned
 # If the key exist, this parameter(DEFAULT_VALUE) has no effect.
 # If the key does not exist, DEFAULT_VALUE becomes the key's value. 2nd
 # argument's default is None.
-dict.update({KEY:VALUE}) # inserts pair in dictionary if not present, if present, corresponding value is overriden (not key)
+dict.update({KEY:VALUE})
+# inserts pair in dictionary if not present, if present, corresponding value is
+# overriden (not key)
 # defaultdict ensures that if any element is accessed that is not present in
 # the dictionary
 # it will be created and error will not be thrown (which happens in normal dictionary)
@@ -235,7 +238,8 @@ set = {1,2,3}
 
 set.add(item)
 set.remove(item)
-set.discard(item) | set.remove(item) # removes item | remove will throw error if item is not there, discard will not
+set.discard(item) | set.remove(item)
+# removes item | remove will throw error if item is not there, discard will not
 set.pop() # removes random item (since unordered)
 
 set.isdisjoint(anotherSet) # returns true if no common elements
