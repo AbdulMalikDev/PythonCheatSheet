@@ -6,14 +6,14 @@
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329842-38f3de07-62d9-4d7d-9a19-fc576ee396a9.jpg)
     
-- Operators and it’s precendence
+- Operators and it’s precedence
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329850-61fc0809-a4b0-416c-848b-1c502ecb4772.jpg)
     
 
 # Data Structures
 
-*Important data structures for Leetcode*
+*Important data structures for LeetCode*
 
 ## Lists
 
@@ -394,7 +394,7 @@ string.isupper()
 
 # Clean Code Tips
 
-- **Doc Strings -**  Documentation for your functions in the interview to look slic 😎
+- **Doc Strings -**  Documentation for your functions in the interview to look slick 😎
     
     A docstring is short for documentation string.
     
