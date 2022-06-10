@@ -6,14 +6,14 @@
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329842-38f3de07-62d9-4d7d-9a19-fc576ee396a9.jpg)
     
-- Operators and it’s precendence
+- Operators and it’s precedence
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329850-61fc0809-a4b0-416c-848b-1c502ecb4772.jpg)
     
 
 # Data Structures
 
-*Important data structures for Leetcode*
+*Important data structures for LeetCode*
 
 ## Lists
 
@@ -57,9 +57,12 @@ a[:]           # a copy of the whole array
 There is also the step value, which can be used with any of the above:
 
 a[start:stop:step] # start through not past stop, by step
-The key point to remember is that the :stop value represents the first value that is not in the selected slice. So, the difference between stop and start is the number of elements selected (if step is 1, the default).
+The key point to remember is that the :stop value represents the first value
+that is not in the selected slice. So, the difference between stop and start is
+the number of elements selected (if step is 1, the default).
 
-The other feature is that start or stop may be a negative number, which means it counts from the end of the array instead of the beginning. So:
+The other feature is that start or stop may be a negative number, which means
+it counts from the end of the array instead of the beginning. So:
 
 a[-1]    # last item in the array
 a[-2:]   # last two items in the array
@@ -70,18 +73,27 @@ a[::-1]    # all items in the array, reversed
 a[1::-1]   # the first two items, reversed
 a[:-3:-1]  # the last two items, reversed
 a[-3::-1]  # everything except the last two items, reversed
-Python is kind to the programmer if there are fewer items than you ask for. For example, if you ask for a[:-2] and a only contains one element, you get an empty list instead of an error. Sometimes you would prefer the error, so you have to be aware that this may happen.
+Python is kind to the programmer if there are fewer items than you ask for. For
+example, if you ask for a[:-2] and a only contains one element, you get an
+empty list instead of an error. Sometimes you would prefer the error, so you
+have to be aware that this may happen.
 
 Relation to slice() object
-The slicing operator [] is actually being used in the above code with a slice() object using the : notation (which is only valid within []), i.e.:
+The slicing operator [] is actually being used in the above code with a slice()
+object using the : notation (which is only valid within []), i.e.:
 
 a[start:stop:step]
 is equivalent to:
 
 a[slice(start, stop, step)]
-Slice objects also behave slightly differently depending on the number of arguments, similarly to range(), i.e. both slice(stop) and slice(start, stop[, step]) are supported. To skip specifying a given argument, one might use None, so that e.g. a[start:] is equivalent to a[slice(start, None)] or a[::-1] is equivalent to a[slice(None, None, -1)].
+Slice objects also behave slightly differently depending on the number of
+arguments, similarly to range(), i.e. both slice(stop) and slice(start, stop[,
+step]) are supported. To skip specifying a given argument, one might use None,
+so that e.g. a[start:] is equivalent to a[slice(start, None)] or a[::-1] is
+equivalent to a[slice(None, None, -1)].
 
-While the :-based notation is very helpful for simple slicing, the explicit use of slice() objects simplifies the programmatic generation of slicing.
+While the :-based notation is very helpful for simple slicing, the explicit use
+of slice() objects simplifies the programmatic generation of slicing.
 ```
 
 ## Dictionary
@@ -101,14 +113,20 @@ dict.values() # returns list of values of dictionary
 dict.get('a') # returns value for any corresponding key
 dict.items() # returns [('a',1),('b',2),('c',3)]
 dict.copy() # returns copy of the dictionary
-# NOTE : items() Returns view object that will be updated with any future changes to dict
+# NOTE : items() Returns view object that will be updated with any future
+# changes to dict
 dict.pop(KEY) # pops key-value pair with that key
 dict.popitem() # removes most recent pair added
-dict.setDefault(KEY,DEFAULT_VALUE) # returns value of key, if key exists, else default value returned
+dict.setDefault(KEY,DEFAULT_VALUE)
+# returns value of key, if key exists, else default value returned
 # If the key exist, this parameter(DEFAULT_VALUE) has no effect.
-# If the key does not exist, DEFAULT_VALUE becomes the key's value. 2nd argument's default is None.
-dict.update({KEY:VALUE}) # inserts pair in dictionary if not present, if present, corresponding value is overriden (not key)
-# defaultdict ensures that if any element is accessed that is not present in the dictionary
+# If the key does not exist, DEFAULT_VALUE becomes the key's value. 2nd
+# argument's default is None.
+dict.update({KEY:VALUE})
+# inserts pair in dictionary if not present, if present, corresponding value is
+# overriden (not key)
+# defaultdict ensures that if any element is accessed that is not present in
+# the dictionary
 # it will be created and error will not be thrown (which happens in normal dictionary)
 # Also, the new element created will be of argument type, for example in the below line
 # an element of type 'list' will be made for a Key that does not exist
@@ -120,7 +138,7 @@ myDictionary = defaultdict(list)
 > Python Counter is a container that will hold the count of each of the elements present in the container. The counter is a sub-class available inside the dictionary class. Specifically used for element frequencies
 > 
 
-*Pretty similar to dictionary, infact I use* **defaultdict(int)** *most of the time* 
+*Pretty similar to dictionary, in fact I use* **defaultdict(int)** *most of the time* 
 
 ```python
 from collections import Counter #(capital 'C')
@@ -192,8 +210,11 @@ nums = [5, 7, 9, 1, 3]
 heapq.heapify(nums) # converts list into heap. Can be converted back to list by list(nums).
 heapq.heappush(nums,element) # Push an element into the heap
 heapq.heappop(nums) # Pop an element from the heap
-#heappush(heap, ele) :- This function is used to insert the element mentioned in its arguments into heap. The order is adjusted, so as heap structure is maintained.
-#heappop(heap) :- This function is used to remove and return the smallest element from heap. The order is adjusted, so as heap structure is maintained.
+# heappush(heap, ele) :- This function is used to insert the element mentioned
+# in its arguments into heap. The order is adjusted, so as heap structure is
+# maintained.
+# heappop(heap) :- This function is used to remove and return the smallest
+# element from heap. The order is adjusted, so as heap structure is maintained.
 
 # Other Methods Available in the Library
 # Used to return the k largest elements from the iterable specified 
@@ -217,7 +238,8 @@ set = {1,2,3}
 
 set.add(item)
 set.remove(item)
-set.discard(item) | set.remove(item) # removes item | remove will throw error if item is not there, discard will not
+set.discard(item) | set.remove(item)
+# removes item | remove will throw error if item is not there, discard will not
 set.pop() # removes random item (since unordered)
 
 set.isdisjoint(anotherSet) # returns true if no common elements
@@ -258,43 +280,45 @@ tuple.index(1) # returns index of 1 in array
 
 ```python
 # ** split Function **
-#The split() method breaks up a string at the specified separator and returns a list of strings.
+# The split() method breaks up a string at the specified separator and returns
+# a list of strings.
 text = 'Python is a fun programming language'
 
 # split the text from space
 print(text.split(' '))
-
-#convert string to list
-s="abcd"
-s=list(s)
-
 # Output: ['Python', 'is', 'a', 'fun', 'programming', 'language']
 
+# convert string to list
+s="abcd"
+s=list(s)
+print(s)
+# Output: ['a', 'b', 'c', 'd']
+
 # ** count Function **
-#The count() method returns the number of occurrences of a substring in the given string.
-#Example
+# The count() method returns the number of occurrences of a substring in the given string.
+# Example
 message = 'python is popular programming language'
 # number of occurrence of 'p'
 print('Number of occurrence of p:', message.count('p')) # Output: Number of occurrence of p: 4
 
-#The isnumeric() method returns True if all characters in a string are numeric characters. If not, it returns False.
+# The isnumeric() method returns True if all characters in a string are numeric characters. If not, it returns False.
 s = '1242323'
 print(s.isnumeric()) #Output: True
 
-#The find() method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
+# The find() method returns the index of first occurrence of the substring (if found). If not found, it returns -1.
 # check the index of 'fun'
 print(message.find('fun')) # Output: 12
 
-#The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
+# The isalnum() method returns True if all characters in the string are alphanumeric (either alphabets or numbers). If not, it returns False.
 
 name = "M3onica Gell22er "
 print(name.isalnum()) # Output : False
 
-#The isalpha() method returns True if all characters in the string are alphabets. If not, it returns False
+# The isalpha() method returns True if all characters in the string are alphabets. If not, it returns False
 name = "Monica"
 print(name.isalpha()) #output true
 
-#other imp functions
+# other imp functions
 string.strip([chars]) #The strip() method returns a copy of the string by removing both the leading and the trailing characters (based on the string argument passed).
 string.upper() #he upper() method converts all lowercase characters in a string into uppercase characters and returns it.
 string.lower() #The lower() method converts all uppercase characters in a string into lowercase characters and returns it.
@@ -310,21 +334,21 @@ string.isupper()
     ```python
     
     ** map(fun, iter) **
-    #fun : It is a function to which map passes each element of given iterable.
-    #iter : It is a iterable which is to be mapped.
+    # fun : It is a function to which map passes each element of given iterable.
+    # iter : It is a iterable which is to be mapped.
     
     ** zip(list,list) **
     for elem1,elem2 in zip(firstList,secondList):
     	# will merge both lists and produce tuples with both elements
     	# Tuples will stop at shortest list (in case of both lists having different len)
-    #Example
+    # Example
     '''
     a = ("John", "Charles", "Mike")
     b = ("Jenny", "Christy", "Monica")
     
     x = zip(a, b)
     
-    #use the tuple() function to display a readable version of the result:
+    # use the tuple() function to display a readable version of the result:
     
     print(tuple(x))
     o/p: (('John', 'Jenny'), ('Charles', 'Christy'), ('Mike', 'Monica'))
@@ -368,13 +392,13 @@ string.isupper()
     ** ord(str) **
     # returns ascii value of the character , Example ord("a") = 97
     ** chr(int) ** 
-    #return character of given ascii value , Example chr(97) = "a"
+    # return character of given ascii value , Example chr(97) = "a"
     ```
     
 
 # Clean Code Tips
 
-- **Doc Strings -**  Documentation for your functions in the interview to look slic 😎
+- **Doc Strings -**  Documentation for your functions in the interview to look slick 😎
     
     A docstring is short for documentation string.
     
@@ -561,7 +585,7 @@ string.isupper()
     - Other Important functions
     
     ```python
-    #Constants
+    # Constants
     # Print the value of Euler e (2.718281828459045)
     print (math.e)
     # Print the value of pi (3.141592653589793)
@@ -608,7 +632,7 @@ string.isupper()
     from functools import cmp_to_key
     sorted(mylist, key=cmp_to_key(compare))
     
-    #Example
+    # Example
     def compare(item1, item2):
         if fitness(item1) < fitness(item2):
             return -1
