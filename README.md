@@ -4,8 +4,8 @@
 
 - Data Types
 
-    ![Untitled](https://user-images.githubusercontent.com/59110866/173563199-1729bc50-753f-447e-a673-b84691d88ef7.png)
-    
+    ![Untitled](https://user-images.githubusercontent.com/59110866/173563442-1a6fa3d2-b569-4eb0-99cc-9b91cc8be1eb.png)
+
 - Operators and it’s precedence
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329850-61fc0809-a4b0-416c-848b-1c502ecb4772.jpg)
