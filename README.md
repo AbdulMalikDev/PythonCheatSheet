@@ -3,8 +3,8 @@
 # Basics
 
 - Data Types
-    
-    ![Untitled](https://user-images.githubusercontent.com/47276307/172329842-38f3de07-62d9-4d7d-9a19-fc576ee396a9.jpg)
+
+    ![Untitled](https://user-images.githubusercontent.com/59110866/173563199-1729bc50-753f-447e-a673-b84691d88ef7.png)
     
 - Operators and it’s precedence
     
