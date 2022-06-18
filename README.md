@@ -318,13 +318,13 @@ print(name.isalnum()) # Output : False
 name = "Monica"
 print(name.isalpha()) #output true
 
-# other imp functions
+# other important functions
 string.strip([chars]) #The strip() method returns a copy of the string by removing both the leading and the trailing characters (based on the string argument passed).
-string.upper() #he upper() method converts all lowercase characters in a string into uppercase characters and returns it.
-string.lower() #The lower() method converts all uppercase characters in a string into lowercase characters and returns it.
-string.islower()
-string.isdigit()
-string.isupper()
+string.upper() # The upper() method converts all lowercase characters in a string into uppercase characters and returns it.
+string.lower() # The lower() method converts all uppercase characters in a string into lowercase characters and returns it.
+string.islower() # The islower() method returns True if all cased characters in the string are lowercase and there is at least one cased character, False otherwise.
+string.isdigit() 
+string.isupper() # The isupper() method returns True if all cased characters in the string are uppercase and there is at least one cased character, False otherwise.
 ```
 
 # Built-in or Library functions
