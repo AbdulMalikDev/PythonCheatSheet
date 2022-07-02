@@ -137,71 +137,6 @@ dict.update({KEY:VALUE})
 myDictionary = defaultdict(list) 
 ```
 
-
-##OrderedDict
-> An OrderedDict is a dictionary subclass that remembers the order that keys were first inserted.
-```python
-#If you want dictionary to remember the order that keys were first inserted we use OrderedDict 
-
-#The only difference between dict() and OrderedDict() is that:
-
-#OrderedDict preserves the order in which the keys are inserted. 
-#A regular dict doesn’t track the insertion order and iterating it gives the values in an arbitrary order. 
-#By contrast, the order the items are inserted is remembered by OrderedDict.
-
-
-# A Python program to demonstrate working of OrderedDict
-from collections import OrderedDict
- 
-print("This is a Dict:\n")
-d = {}
-d['a'] = 1
-d['b'] = 2
-d['c'] = 3
-d['d'] = 4
- 
-for key, value in d.items():
-    print(key, value)
- 
-print("\nThis is an Ordered Dict:\n")
-od = OrderedDict()
-od['a'] = 1
-od['b'] = 2
-od['c'] = 3
-od['d'] = 4
- 
-for key, value in od.items():
-    print(key, value)
-
-output:
-This is a Dict:
-a 1
-c 3
-b 2
-d 4
-
-This is an Ordered Dict:
-a 1
-b 2
-c 3
-d 4
-
-Important Points:
-
-1) If the value of a certain key is changed, the position of the key remains unchanged in OrderedDict.
-
-2) Deleting and re-inserting the same key will push it to the back as OrderedDict, however, maintains the order of insertion.
-
-Other Considerations:  
-
-* Ordered dict in Python version 2.7 consumes more memory than normal dict. This is due to the underlying Doubly Linked List implementation for keeping the order. In Python 2.7 Ordered Dict is not dict subclass, it’s a specialized container from collections module.
-
-* Starting from Python 3.7, insertion order of Python dictionaries is guaranteed.
-
-* Ordered Dict can be used as a stack with the help of popitem function. Try implementing LRU cache with Ordered Dict.
-
-```
-
 ## Counter
 
 > Python Counter is a container that will hold the count of each of the elements present in the container. The counter is a sub-class available inside the dictionary class. Specifically used for element frequencies
@@ -300,7 +235,8 @@ heapq.nsmallest(k, iterable, key = fun)
 #Max heap in python 
 
 #By default heapq in python is min heap, 
-#if we want to use max heap we can simply invert the value of the keys and use heapq. For example, turn 1000.0 into -1000.0 and 5.0 into -5.0.
+#if we want to use max heap we can simply invert the value of the keys and use heapq. 
+#For example, turn 1000.0 into -1000.0 and 5.0 into -5.0.
 
 #The easiest and ideal solution
 #Multiply the values by -1
