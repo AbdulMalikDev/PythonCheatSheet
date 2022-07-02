@@ -1,11 +1,15 @@
 # Python Cheat Sheet
-> **Contributions are welcome!**
+
+> [Click here for similar Java Resource (not made by me)](https://drive.google.com/file/d/1ao4ZA28zzBttDkuS6MLQI52gDs_CJZEm/view) <br>
+> Get a PDF of this sheet at the end. <br>
+> Leave a ⭐ if you like the cheat sheet (contributions welcome!) <br>
+
 # Basics
 
 - Data Types
-    
-    ![Untitled](https://user-images.githubusercontent.com/47276307/172329842-38f3de07-62d9-4d7d-9a19-fc576ee396a9.jpg)
-    
+
+    ![Untitled](https://user-images.githubusercontent.com/59110866/173563442-1a6fa3d2-b569-4eb0-99cc-9b91cc8be1eb.png)
+
 - Operators and it’s precedence
     
     ![Untitled](https://user-images.githubusercontent.com/47276307/172329850-61fc0809-a4b0-416c-848b-1c502ecb4772.jpg)
@@ -421,13 +425,13 @@ print(name.isalnum()) # Output : False
 name = "Monica"
 print(name.isalpha()) #output true
 
-# other imp functions
+# other important functions
 string.strip([chars]) #The strip() method returns a copy of the string by removing both the leading and the trailing characters (based on the string argument passed).
-string.upper() #he upper() method converts all lowercase characters in a string into uppercase characters and returns it.
-string.lower() #The lower() method converts all uppercase characters in a string into lowercase characters and returns it.
-string.islower()
-string.isdigit()
-string.isupper()
+string.upper() # The upper() method converts all lowercase characters in a string into uppercase characters and returns it.
+string.lower() # The lower() method converts all uppercase characters in a string into lowercase characters and returns it.
+string.islower() # The islower() method returns True if all cased characters in the string are lowercase and there is at least one cased character, False otherwise.
+string.isdigit() 
+string.isupper() # The isupper() method returns True if all cased characters in the string are uppercase and there is at least one cased character, False otherwise.
 ```
 
 # Built-in or Library functions
@@ -753,7 +757,7 @@ string.isupper()
 
 - PDF with all Python Data Structures in-depth
     
-    [Python Data Structure.pdf](Python%20Brushup%20bb9cdcd84f45485984711559d663c8c6/Python_Data_Structure.pdf)
+    [Python Data Structure.pdf](https://github.com/AbdulMalikDev/PythonCheatSheet/files/9033162/Python_Cheat_Sheet_Made_by_Abdul_Malik.pdf)
     
 
 [The Modulo Operation (%) With Negative Numbers in Python](https://betterprogramming.pub/modulo-operation-with-negative-numbers-in-python-38cb7256bb32)
