@@ -650,7 +650,7 @@ string.isupper() # The isupper() method returns True if all cased characters in 
 
 - PDF with all Python Data Structures in-depth
     
-    [Python Data Structure.pdf](Python%20Brushup%20bb9cdcd84f45485984711559d663c8c6/Python_Data_Structure.pdf)
+    [Python Data Structure.pdf](https://github.com/AbdulMalikDev/PythonCheatSheet/files/9033162/Python_Cheat_Sheet_Made_by_Abdul_Malik.pdf)
     
 
 [The Modulo Operation (%) With Negative Numbers in Python](https://betterprogramming.pub/modulo-operation-with-negative-numbers-in-python-38cb7256bb32)
