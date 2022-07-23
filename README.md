@@ -303,7 +303,7 @@ set.update(anotherSet) # adds anotherSet without duplicate
 
 ## Tuples
 
-> A tuple is a collection which is ordered, unchangeable and can contain duplicate values
+> A [tuple](https://www.scaler.com/topics/python/tuples-in-python/) is a collection which is ordered, unchangeable and can contain duplicate values
 > 
 - *Operations Time Complexities*
     
