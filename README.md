@@ -689,6 +689,65 @@ string.isupper() # The isupper() method returns True if all cased characters in 
 > Python integer division doesn’t work properly with -ve numbers ex: -3//2 will give -2 answer instead of -1 so always use int(-3/2) for integer division in problems
 > 
 
+
+- Using List to implement Stack and Queue
+
+    [Stack in Python - GeeksforGeeks](https://www.geeksforgeeks.org/stack-in-python/)\
+    [Queue in Python - GeeksforGeeks](https://www.geeksforgeeks.org/queue-in-python/)
+
+    ## Stack
+    ```Python
+    class Stack:
+    def __init__(self):
+        self.stack = []         # using list as stack
+
+    def push(self, val):
+        """
+        push element to the stack.
+        using list append() for stack push().
+        """
+        self.stack.append(val)
+
+    def pop(self):
+        """
+        pops top element of the stack using list pop(). 
+        if IndexError occurs show appropriate message.
+        """
+        try:
+            return self.stack.pop()
+        except IndexError:  
+            raise IndexError("Can't pop from empty stack!") from None
+    
+    def empty(self):
+        """
+        returns True if stack is empty.
+        returns False if stack is not empty.
+        """
+        return True if not self.stack else False
+
+    def top(self):
+        """
+        returns top/peek element of the stack
+        """
+        return self.stack[-1]
+    
+    def length(self):
+        """
+        returns the size of stack
+        """
+        return len(self.stack)
+
+    def getStack(self):
+        """
+        returns the stack
+        """
+        return self.stack
+    ```
+
+    ## Queue
+    ```Python
+    ```
+
 # Resources
 
 - PDF with all Python Data Structures in-depth
