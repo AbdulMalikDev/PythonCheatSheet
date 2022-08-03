@@ -698,54 +698,103 @@ string.isupper() # The isupper() method returns True if all cased characters in 
     ## Stack
     ```Python
     class Stack:
-    def __init__(self):
-        self.stack = []         # using list as stack
+        def __init__(self):
+            self.stack = []         # using list as stack
 
-    def push(self, val):
-        """
-        push element to the stack.
-        using list append() for stack push().
-        """
-        self.stack.append(val)
+        def push(self, val):
+            """
+            push element to the stack.
+            using list append() for stack push().
+            """
+            self.stack.append(val)
 
-    def pop(self):
-        """
-        pops top element of the stack using list pop(). 
-        if IndexError occurs show appropriate message.
-        """
-        try:
-            return self.stack.pop()
-        except IndexError:  
-            raise IndexError("Can't pop from empty stack!") from None
-    
-    def empty(self):
-        """
-        returns True if stack is empty.
-        returns False if stack is not empty.
-        """
-        return True if not self.stack else False
+        def pop(self):
+            """
+            pops top element of the stack using list pop(). 
+            if IndexError occurs show appropriate message.
+            """
+            try:
+                return self.stack.pop()
+            except IndexError:  
+                raise IndexError("Can't pop from empty stack!") from None
+        
+        def empty(self):
+            """
+            returns True if stack is empty.
+            returns False if stack is not empty.
+            """
+            return True if not self.stack else False
 
-    def top(self):
-        """
-        returns top/peek element of the stack
-        """
-        return self.stack[-1]
-    
-    def length(self):
-        """
-        returns the size of stack
-        """
-        return len(self.stack)
+        def top(self):
+            """
+            returns top/peek element of the stack
+            """
+            return self.stack[-1]
+        
+        def length(self):
+            """
+            returns the size of stack
+            """
+            return len(self.stack)
 
-    def getStack(self):
-        """
-        returns the stack
-        """
-        return self.stack
+        def getStack(self):
+            """
+            returns the stack
+            """
+            return self.stack
     ```
 
     ## Queue
     ```Python
+    class Queue:
+        def __init__(self):
+            self.queue = []     # list as queue 
+
+        def enqueue(self, val):
+            """
+            enqueue() using list append()
+            """
+            self.queue.append(val)
+
+        def dequeue(self):
+            """
+            dequeue() using list pop()
+            pop(0) to pop() element from index 0
+            """
+            try:
+                return self.queue.pop(0)
+            except IndexError:
+                raise IndexError("Can't dequeue from empty queue!") from None
+
+        def front(self):
+            """
+            returns the front element
+            """
+            return self.queue[-1]
+
+        def rear(self):
+            """
+            returns the rear element
+            """
+            return self.queue[0]
+
+        def empty(self):
+            """
+            returns True if queue is empty, False otherwise.
+            """
+            return True if not self.queue else False
+
+        def length(self):
+            """
+            returns the length of queue
+            """
+            return len(self.queue)
+
+        def getQueue(self):
+            """
+            returns the queue
+            """
+            return self.queue
     ```
 
 # Resources
