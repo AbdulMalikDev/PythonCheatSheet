@@ -688,7 +688,7 @@ string.isupper() # The isupper() method returns True if all cased characters in 
     ```
     
 
-> Python integer division doesn’t work properly with -ve numbers ex: -3//2 will give -2 answer instead of -1 so always use int(-3/2) for integer division in problems
+> Python integer division acts a bit weird with -ve numbers ex: -3//2 will give -2 answer instead of -1 so always use int(-3/2) for integer division in problems
 > 
 
 # Resources
