@@ -205,7 +205,7 @@ queue.reverse() # reverses order of queue elements
 
 ## Heapq
 
-> As we know the Heap Data Structure is used to implement the Priority Queue ADT. In python we can directly access a Priority Queue implemented using a Heap by using the **Heapq** library/module.
+> As we know the [Heap Data Structure](https://www.scaler.com/topics/data-structures/heap-data-structure/) is used to implement the Priority Queue ADT. In python we can directly access a Priority Queue implemented using a Heap by using the **Heapq** library/module.
 > 
 - *Operations Time Complexities*
     
